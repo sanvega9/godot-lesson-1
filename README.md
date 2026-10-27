@@ -2,6 +2,26 @@
 ## Introduction to the animation features
 - AnimationPlayer Node: The core tool used to keyframe transforms (position, rotation, scale), colors, shader parameters, visibility, audio volume, and even call methods or trigger code on a timeline. 
 - AnimatedSprite2D Node: Ideal for 2D frame-by-frame or sprite-sheet animations where you switch or play sequential images.
+## Enter age 
+```
+Console.Write("Enter your name: ");
+string userName = Console.ReadLine();
+
+Console.WriteLine($"Hello, {userName}!"); 
+// print the user age 
+Console.Write("Enter your age: ");
+// Allow the user to input 
+string input = Console.ReadLine();
+// Safely try to convert the text to an integer
+if (int.TryParse(input, out int age))
+{
+    Console.WriteLine($"Next year you will be {age + 1}.");
+}
+else
+{
+    Console.WriteLine("That is not a valid number.");
+}
+```
 
 ## Code
 ```
